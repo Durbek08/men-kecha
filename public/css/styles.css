@@ -492,21 +492,15 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.fixed {
-  position: fixed;
-}
-.left-0 {
-  left: 0px;
-}
-.top-0 {
-  top: 0px;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -517,6 +511,9 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -526,8 +523,14 @@ video {
 .mb-\[2px\] {
   margin-bottom: 2px;
 }
-.mb-16 {
-  margin-bottom: 4rem;
+.mb-\[49px\] {
+  margin-bottom: 49px;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .flex {
   display: flex;
@@ -535,11 +538,17 @@ video {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-4 {
   height: 1rem;
 }
 .h-\[191px\] {
   height: 191px;
+}
+.h-\[309px\] {
+  height: 309px;
 }
 .h-\[396px\] {
   height: 396px;
@@ -550,8 +559,14 @@ video {
 .w-\[100\%\] {
   width: 100%;
 }
-.w-full {
-  width: 100%;
+.w-\[1128px\] {
+  width: 1128px;
+}
+.w-\[auto\] {
+  width: auto;
+}
+.max-w-\[1044px\] {
+  max-width: 1044px;
 }
 .max-w-\[1128px\] {
   max-width: 1128px;
@@ -562,7 +577,7 @@ video {
 .max-w-\[744px\] {
   max-width: 744px;
 }
-.max-w-\[100\%\] {
+.max-w-full {
   max-width: 100%;
 }
 .cursor-alias {
@@ -589,6 +604,12 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+.gap-6 {
+  gap: 1.5rem;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -605,6 +626,14 @@ video {
 .bg-\[\#D9D9D9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+.bg-blog-aqua-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 162 143 / var(--tw-bg-opacity));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -643,14 +672,17 @@ video {
 .pb-\[60px\] {
   padding-bottom: 60px;
 }
+.pl-22 {
+  padding-left: 22px;
+}
 .pl-5 {
   padding-left: 1.25rem;
 }
-.pl-\[12px\] {
-  padding-left: 12px;
-}
 .pl-\[22px\] {
   padding-left: 22px;
+}
+.pl-blog-12 {
+  padding-left: 12px;
 }
 .pr-5 {
   padding-right: 1.25rem;
@@ -664,17 +696,9 @@ video {
 .pt-\[292px\] {
   padding-top: 292px;
 }
-.pt-16 {
-  padding-top: 4rem;
-}
-.pt-24 {
-  padding-top: 6rem;
-}
-.pt-28 {
-  padding-top: 7rem;
-}
-.pt-32 {
-  padding-top: 8rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -691,6 +715,12 @@ video {
 }
 .text-\[20px\] {
   font-size: 20px;
+}
+.text-\[24px\] {
+  font-size: 24px;
+}
+.text-\[32px\] {
+  font-size: 32px;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -716,13 +746,80 @@ video {
   --tw-text-opacity: 1;
   color: rgb(97 97 97 / var(--tw-text-opacity));
 }
+.text-\[rgb\(97\2c 97\2c 97\)\] {
+  --tw-text-opacity: 1;
+  color: rgb(97 97 97 / var(--tw-text-opacity));
+}
+.text-blog-grey-300 {
+  --tw-text-opacity: 1;
+  color: rgb(97 97 97 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.card{
-    border-radius: 10px;
-
-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  
 }
+
+@media (min-width: 640px) {
+
+  .sm\:grid {
+    display: grid;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:bg-orange-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+  }
+
+  .md\:font-bold {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+}
+
